@@ -1,0 +1,28 @@
+{
+  "name": "games",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sergey Krivtsov",
+  "license": "ISC",
+  "description": "Brain-Games1",
+  "devDependencies": {
+    "babel-cli": "^6.23.0"
+  },
+  "dependencies": {
+    "babel-cli": "^6.23.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krivtsov/project-lvl1-s69.git"
+  },
+  "keywords": [
+    "BG1"
+  ],
+  "bugs": {
+    "url": "https://github.com/krivtsov/project-lvl1-s69/issues"
+  },
+  "homepage": "https://github.com/krivtsov/project-lvl1-s69#readme"
+}
