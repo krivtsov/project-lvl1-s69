@@ -6,3 +6,6 @@ start:
 	
 publish:
 	npm publish
+	
+build:
+	npm run build
