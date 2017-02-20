@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
-import tellName from '..';
+import yourName from '..';
 
-tellName();
+yourName();
 
 
