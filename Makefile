@@ -13,5 +13,5 @@ publish:
 build:
 	npm run build
 
-lint:
+make lint:
 	npm run eslint
