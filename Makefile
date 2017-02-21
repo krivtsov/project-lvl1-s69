@@ -14,4 +14,4 @@ build:
 	npm run build
 
 make lint:
-	npm run eslint
+	npm run eslint -- src

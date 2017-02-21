@@ -9,6 +9,7 @@ const gameEven = () => {
   const name = yourName();
   sayHello(name);
   const iter = (acc) => {
+    let result = 0;
     if (acc === 3) {
       return console.log(`\nCongratulations, ${name}!\n`);
     }
@@ -22,12 +23,12 @@ const gameEven = () => {
     };
     const answer = yourAnswer();
     if (answer === checkEven(number)) {
-      acc += 1;
+      result = acc + 1;
       console.log('Correct!');
     } else {
       return console.log(`'${answer}' is wrong answer ;(. Correct answer was '${checkEven(number)}'.\nLet's try again, ${name}!`);
     }
-    return iter(acc);
+    return iter(result);
   };
   return iter(0);
 };

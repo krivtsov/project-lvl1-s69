@@ -1,18 +1,17 @@
-root: true
-
+#root: true
 env:
     node: true
-
-extends:
-  - 'airbnb-base'
-  - plugin:import/errors
-  - plugin:import/warnings
 
 parser: babel-eslint
 
 parserOptions:
   ecmaVersion: 2017
   sourceType: module
+
+extends:
+  - 'airbnb-base'
+  - plugin:import/errors
+  - plugin:import/warnings
 
 rules:
   no-console: 0
