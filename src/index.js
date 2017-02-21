@@ -10,6 +10,9 @@ export const yourName = () => {
   const name = readlineSync.question('May I have your name? ');
   return name;
 };
+export const sayHello = (name) => {
+  console.log(`Hello ${name}!\n`);
+};
 
 export const ruleEvenGame = () => {
   console.log('Answer "yes" if number even otherwise answer "no".\n');

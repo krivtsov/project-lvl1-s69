@@ -1,18 +1,19 @@
 #!/usr/bin/env node
 
-import { welcome, yourName, ruleEvenGame, yourAnswer } from '../';
+import { welcome, yourName, ruleEvenGame, yourAnswer, sayHello } from '../';
 
 
 const gameEven = () => {
   welcome();
   ruleEvenGame();
   const name = yourName();
+  sayHello(name);
   const iter = (acc) => {
     if (acc === 3) {
       return console.log(`\nCongratulations, ${name}!\n`);
     }
     const number = (Math.floor(Math.random() * 10) + 1);
-    console.log(`Question: ${number}'`);
+    console.log(`Question: ${number}`);
     const checkEven = (num) => {
       if (num % 2 === 0) {
         return 'yes';
