@@ -1,10 +1,11 @@
 {
   "name": "braingames170220",
-  "version": "1.0.1",
+  "version": "1.1.2",
   "main": "index.js",
   "author": "Sergey Krivtsov",
   "bin": {
-    "brain-games": "dist/bin/brain-games.js"
+    "brain-games": "dist/bin/brain-games.js",
+    "brain-even": "dist/bin/brain-even.js"
   },
   "scripts": {
     "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
@@ -29,7 +30,8 @@
     "readline-sync": "^1.4.6"
   },
   "dependencies": {
-    "babel-cli": "^6.23.0"
+    "babel-cli": "^6.23.0",
+    "readline-sync": "^1.4.6"
   },
   "repository": {
     "type": "git",

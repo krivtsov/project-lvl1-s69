@@ -1,5 +1,11 @@
 #!/usr/bin/env node
 
-import yourName from '../';
+import { welcome, yourName } from '../';
 
-yourName();
+const brainGames = () => {
+  welcome();
+  const name = yourName();
+  console.log(`Hello ${name}!\n`);
+};
+
+brainGames();
