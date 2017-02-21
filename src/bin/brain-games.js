@@ -1,7 +1,5 @@
 #!/usr/bin/env node
 
-import yourName from '..';
+import yourName from '../';
 
 yourName();
-
-
