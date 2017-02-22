@@ -1,4 +1,6 @@
-import { welcome, yourName, ruleEvenGame, iterEvenGame, sayHello } from '.';
+#!/usr/bin/env node
+
+import { welcome, yourName, ruleEvenGame, iterEvenGame, sayHello, questionValueEvenGame } from '.';
 
 
 export default () => {
@@ -6,5 +8,5 @@ export default () => {
   ruleEvenGame();
   const name = yourName();
   sayHello(name);
-  iterEvenGame(name, 0);
+  iterEvenGame(name, 0, questionValueEvenGame());
 };
