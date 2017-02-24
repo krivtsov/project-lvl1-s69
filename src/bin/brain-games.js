@@ -1,10 +1,5 @@
 #!/usr/bin/env node
 
-import { welcome, yourName, sayHello } from '../';
+import runTestGame from '../startTest';
 
-const brainGames = () => {
-  welcome();
-  sayHello(yourName());
-};
-
-brainGames();
+runTestGame();

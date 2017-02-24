@@ -8,7 +8,7 @@ export const sayHello = (name) => {
   console.log(`Hello ${name}!\n`);
 };
 
-export const question = (value) => {
+export const askQuestion = (value) => {
   console.log(`Question: ${value}`);
 };
 
