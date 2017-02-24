@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import runTestGame from '../startTest';
+import runTestGame from '../games/test';
 
 runTestGame();

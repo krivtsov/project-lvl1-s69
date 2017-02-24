@@ -10,6 +10,9 @@ startEven:
 startCalc:
 	npm run babel-node -- src/bin/brain-calc.js
 
+startGcd:
+	npm run babel-node -- src/bin/brain-gcd.js
+
 publish:
 	npm publish
 
