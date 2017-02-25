@@ -1,13 +1,14 @@
 {
   "name": "braingames170220",
-  "version": "1.4.3",
+  "version": "1.4.0",
   "main": "index.js",
   "author": "Sergey Krivtsov",
   "bin": {
     "brain-games": "dist/bin/brain-games.js",
     "brain-even": "dist/bin/brain-even.js",
     "brain-calc": "dist/bin/brain-calc.js",
-    "brain-gcd": "dist/bin/brain-gcd.js"
+    "brain-gcd": "dist/bin/brain-gcd.js",
+    "brain-gcd": "dist/bin/brain-balance.js"
   },
   "scripts": {
     "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",

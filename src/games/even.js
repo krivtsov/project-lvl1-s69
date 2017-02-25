@@ -4,7 +4,7 @@ const ruleEvenGame = () => {
   console.log('Answer "yes" if number even otherwise answer "no".\n');
 };
 
-const questionEvenGame = () => randomNumber();
+const questionEvenGame = () => randomNumber(1, 999);
 
 const correctAnswer = (num) => {
   if (num % 2 === 0) {

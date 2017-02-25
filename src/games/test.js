@@ -4,7 +4,7 @@ const ruleTestGame = () => {
   console.log('It\'s a simple game, !!!!! enter the number.\n');
 };
 
-const questionTest = () => randomNumber();
+const questionTest = () => randomNumber(1, 999);
 
 const correctAnswer = num => Number(num);
 

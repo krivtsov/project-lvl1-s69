@@ -12,8 +12,9 @@ const questionGcdGame = () => {
 };
 
 const correctAnswer = (expression) => {
-  const number1 = Number(expression[0]);
-  const number2 = Number(expression[2]);
+  const pairExp = expression.split(' ');
+  const number1 = Number(pairExp[0]);
+  const number2 = Number(pairExp[1]);
   const gcd = (num1, num2) => {
     if (num2 === 0) {
       return num1;

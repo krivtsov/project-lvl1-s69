@@ -1,14 +1,15 @@
 import { cons, car, cdr } from 'hexlet-pairs';
-import { gameGo, randomPair } from '..';
+import { gameGo, randomNumber, randomPair } from '..';
 
 const ruleCalcGame = () => {
   console.log('What is the result of the expression?\n');
 };
 
-const randomOperator = () => {
-  const number = (Math.floor(Math.random() * 3) + 1);
-  return number;
-};
+const randomOperator = () => randomNumber(1, 3);
+// {
+//   const number = (Math.floor(Math.random() * 3) + 1);
+//   return number;
+// };
 
 
 const printRandomOperator = (number) => {
@@ -34,16 +35,19 @@ const questionCalc = () => {
 };
 
 const calculation = (expression) => {
-  const pairExp = cons(Number(expression[0]), Number(expression[4]));
+  const pairExp = expression.split(' ');
+  const operand = pairExp[1];
+  const num1 = Number(pairExp[0]);
+  const num2 = Number(pairExp[2]);
   let result = 0;
-  switch (expression[2]) {
-    case '+': result = car(pairExp) + cdr(pairExp);
+  switch (operand) {
+    case '+': result = num1 + num2;
       break;
-    case '-': result = car(pairExp) - cdr(pairExp);
+    case '-': result = num1 - num2;
       break;
-    case '*': result = car(pairExp) * cdr(pairExp);
+    case '*': result = num1 * num2;
       break;
-    default: result = car(pairExp) + cdr(pairExp);
+    default: result = num1 + num2;
   }
   return result;
 };

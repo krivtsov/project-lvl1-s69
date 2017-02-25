@@ -12,14 +12,14 @@ export const yourAnswer = () => {
   return answer;
 };
 
-export const randomNumber = () => {
-  const number = (Math.floor(Math.random() * 9) + 1);
+export const randomNumber = (min, max) => {
+  const number = (Math.floor(Math.random() * (max - min)) + min);
   return number;
 };
 
 export const randomPair = () => {
-  const num1 = randomNumber();
-  const num2 = randomNumber();
+  const num1 = randomNumber(1, 29);
+  const num2 = randomNumber(1, 29);
   const pair = cons(num1, num2);
   return pair;
 };
