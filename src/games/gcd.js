@@ -9,16 +9,17 @@ const questionGcdGame = () => {
   return question;
 };
 
+const gcd = (num1, num2) => {
+  if (num2 === 0) {
+    return num1;
+  }
+  return gcd(num2, num1 % num2);
+};
+
 const correctAnswer = (expression) => {
   const pairExp = expression.split(' ');
   const number1 = Number(pairExp[0]);
   const number2 = Number(pairExp[1]);
-  const gcd = (num1, num2) => {
-    if (num2 === 0) {
-      return num1;
-    }
-    return gcd(num2, num1 % num2);
-  };
   return gcd(number1, number2);
 };
 
