@@ -1,8 +1,6 @@
 import { randomNumber, gameGo } from '..';
 
-const ruleTestGame = () => {
-  console.log('It\'s a simple game, !!!!! enter the number.\n');
-};
+const ruleTestGame = 'It\'s a simple game, !!!!! enter the number';
 
 const questionTest = () => randomNumber(1, 999);
 

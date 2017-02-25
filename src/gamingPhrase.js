@@ -1,5 +1,5 @@
-export const welcome = () => {
-  console.log('Welcome to the Brain Games III !');
+export const welcome = (rules) => {
+  console.log(`Welcome to the Brain Games III !\n${rules}`);
 };
 
 export const sayHello = (name) => {

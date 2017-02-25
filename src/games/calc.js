@@ -1,9 +1,7 @@
-import { cons, car, cdr } from 'hexlet-pairs';
+import { car, cdr } from 'hexlet-pairs';
 import { gameGo, randomNumber, randomPair } from '..';
 
-const ruleCalcGame = () => {
-  console.log('What is the result of the expression?\n');
-};
+const ruleCalcGame = 'What is the result of the expression?';
 
 const randomOperator = () => randomNumber(1, 3);
 // {

@@ -1,8 +1,6 @@
 import { randomNumber, gameGo } from '..';
 
-const ruleEvenGame = () => {
-  console.log('Answer "yes" if number even otherwise answer "no".\n');
-};
+const ruleEvenGame = 'Answer "yes" if number even otherwise answer "no".';
 
 const questionEvenGame = () => randomNumber(1, 999);
 

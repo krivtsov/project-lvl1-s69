@@ -26,8 +26,7 @@ export const randomPair = () => {
 
 
 export const gameGo = (ruleGame, question, corAnswer) => {
-  welcome();
-  ruleGame();
+  welcome(ruleGame);
   const name = yourName();
   sayHello(name);
   const iter = (numberWin) => {

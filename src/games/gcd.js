@@ -1,9 +1,7 @@
 import { car, cdr } from 'hexlet-pairs';
 import { randomPair, gameGo } from '..';
 
-const ruleGcdGame = () => {
-  console.log('Find the greatest common divisor of given numbers.\n');
-};
+const ruleGcdGame = 'Find the greatest common divisor of given numbers.\n';
 
 const questionGcdGame = () => {
   const pair = randomPair();
