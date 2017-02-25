@@ -4,10 +4,6 @@ import { gameGo, randomNumber, randomPair } from '..';
 const ruleCalcGame = 'What is the result of the expression?';
 
 const randomOperator = () => randomNumber(1, 3);
-// {
-//   const number = (Math.floor(Math.random() * 3) + 1);
-//   return number;
-// };
 
 
 const printRandomOperator = (number) => {
