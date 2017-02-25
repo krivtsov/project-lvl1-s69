@@ -1,4 +1,4 @@
-import { cons, car, cdr, toString } from 'hexlet-pairs';
+import { car, cdr } from 'hexlet-pairs';
 import { randomPair, gameGo } from '..';
 
 const ruleGcdGame = () => {
@@ -12,16 +12,17 @@ const questionGcdGame = () => {
 };
 
 const correctAnswer = (expression) => {
-  const pairExp = cons(Number(expression[0]), Number(expression[3]));
-  console.log(toString(pairExp));
-  const gcd = (pair) => {
-    if (cdr(pair) === 0) {
-      return car(pair);
+  const number1 = Number(expression[0]);
+  const number2 = Number(expression[2]);
+  const gcd = (num1, num2) => {
+    if (num2 === 0) {
+      return num1;
     }
-    return gcd(cons(cdr(pair), car(pair) % cdr(pair)));
+    return gcd(num2, num1 % num2);
   };
-  gcd(pairExp);
+  return gcd(number1, number2);
 };
+
 export default () => {
   gameGo(ruleGcdGame, questionGcdGame, correctAnswer);
 };
