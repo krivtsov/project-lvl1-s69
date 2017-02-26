@@ -23,6 +23,6 @@ const correctAnswer = (expression) => {
   return gcd(number1, number2);
 };
 
-export default () => {
-  gameGo(ruleGcdGame, questionGcdGame, correctAnswer);
-};
+const exp = () => [questionGcdGame, correctAnswer];
+
+export default () => gameGo(ruleGcdGame, exp);

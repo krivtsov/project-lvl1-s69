@@ -25,10 +25,11 @@ export const randomPair = () => {
 };
 
 
-export const gameGo = (ruleGame, question, corAnswer) => {
+export const gameGo = (ruleGame, expression) => {
   welcome(ruleGame);
   const name = yourName();
   sayHello(name);
+  const [question, corAnswer] = expression();
   const iter = (numberWin) => {
     if (numberWin === 3) {
       return youWin(name);

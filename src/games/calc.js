@@ -47,6 +47,6 @@ const calculation = (expression) => {
 };
 
 
-export default () => {
-  gameGo(ruleCalcGame, questionCalc, calculation);
-};
+const exp = () => [questionCalc, calculation];
+
+export default () => gameGo(ruleCalcGame, exp);

@@ -1,16 +1,18 @@
 import { randomNumber, gameGo } from '..';
 
-const ruleEvenGame = 'Answer "yes" if number even otherwise answer "no".';
+const ruleEvenGame = 'Answer "yes" if number prime otherwise answer "no".';
 
 const questionEvenGame = () => randomNumber(1, 999);
 
-const correctAnswer = (num) => {
-  if (num % 2 === 0) {
+const isNum = (number) => {
+  if (number % 2 === 0) {
     return 'yes';
   }
   return 'no';
 };
 
-export default () => {
-  gameGo(ruleEvenGame, questionEvenGame, correctAnswer);
-};
+const correctAnswer = num => isNum(num);
+
+const exp = () => [questionEvenGame, correctAnswer];
+
+export default () => gameGo(ruleEvenGame, exp);

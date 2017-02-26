@@ -24,6 +24,7 @@ const correctAnswer = (expression) => {
   return Number(balanceNumber(arrayExp).join(''));
 };
 
-export default () => {
-  gameGo(ruleGcdGame, questionGcdGame, correctAnswer);
-};
+
+const exp = () => [questionGcdGame, correctAnswer];
+
+export default () => gameGo(ruleGcdGame, exp);
