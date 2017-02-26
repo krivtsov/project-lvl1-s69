@@ -1,6 +1,6 @@
 {
   "name": "braingames170220",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "main": "index.js",
   "author": "Sergey Krivtsov",
   "bin": {
@@ -8,7 +8,8 @@
     "brain-even": "dist/bin/brain-even.js",
     "brain-calc": "dist/bin/brain-calc.js",
     "brain-gcd": "dist/bin/brain-gcd.js",
-    "brain-gcd": "dist/bin/brain-balance.js"
+    "brain-balance": "dist/bin/brain-balance.js",
+    "brain-progress": "dist/bin/brain-progression.js"
   },
   "scripts": {
     "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
@@ -34,6 +35,7 @@
   },
   "dependencies": {
     "hexlet-pairs": "^0.1.4",
+    "lodash": "^4.17.4",
     "readline-sync": "^1.4.6"
   },
   "repository": {
