@@ -10,10 +10,10 @@ const guessIndex = randomNumber(0, 9);
 const progressionConst = range(numberStart, endRange, step);
 
 // const progressGame = (arr, num) => {
-  // const guessNumber = () => arr[num];
-  // const progression = [arr.slice(0, num), '..', arr.slice(num + 1)].join(' ');
-  // const questionProgressGame = () => progression;
-  // return [questionProgressGame, guessNumber];
+// const guessNumber = () => arr[num];
+// const progression = [arr.slice(0, num), '..', arr.slice(num + 1)].join(' ');
+// const questionProgressGame = () => progression;
+// return [questionProgressGame, guessNumber];
 
 const progressGame = () => {
   const guessNumber = () => progressionConst[guessIndex];
